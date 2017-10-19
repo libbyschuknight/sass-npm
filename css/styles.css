@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,800,900");
+body {
+  padding: 50px;
+  font-size: 22px;
+  background-color: #ab5dd5; }
+
+div.left {
+  max-width: 400px;
+  float: left;
+  padding-right: 50px; }
+  @media (min-width: 0) and (max-width: 768px) {
+    div.left {
+      width: 100%;
+      float: none; } }
+
+div.right {
+  width: 1000px;
+  width: calc(100% - 450px);
+  float: right;
+  margin-top: 150px; }
+  @media (min-width: 0) and (max-width: 768px) {
+    div.right {
+      margin-top: 0px;
+      width: 100%;
+      float: none; } }
+
+div.pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 860px; }
+  div.pics a {
+    display: block;
+    float: left; }
+  div.pics img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 50px; }
+
+body {
+  font-family: "Work Sans", sans-serif; }
+
+h1 {
+  font-weight: 900; }
+
+h2 {
+  font-weight: 800; }
+
+p {
+  line-height: 32px; }
+
+a {
+  color: black; }
+
+/*# sourceMappingURL=styles.css.map */

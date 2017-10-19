@@ -1,0 +1,44 @@
+body {
+    padding: 50px;
+    font-size: 22px;
+    background-color: rgb(171, 93, 213);
+}
+
+div.left {
+    max-width: 400px;
+    float: left;
+    padding-right: 50px;
+    @include breakpoint($mobile) {
+        width: 100%;
+        float: none;
+    }
+}
+
+div.right {
+    width: 1000px;
+    width: calc(100% - 450px);
+    float: right;
+    margin-top: 150px;
+    @include breakpoint($mobile) {
+        margin-top: 0px;
+        width: 100%;
+        float: none;
+    }
+}
+
+div.pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 860px;
+    a {
+        display: block;
+        float: left;
+    }
+    img {
+        width: 400px;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+}
